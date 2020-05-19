@@ -25,4 +25,6 @@ private:
 
 	double output;
 	double sumOutput;
+
+	double randWeight() { return rand() / double(RAND_MAX); }
 };
