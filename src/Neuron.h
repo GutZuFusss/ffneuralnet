@@ -5,7 +5,7 @@ using namespace std;
 struct Synapse
 {
 	double weight;
-	Synapse(double weight = 0) { this->weight = weight; }
+	Synapse(double weight = 0.0) { this->weight = weight; }
 };
 
 class Neuron {
