@@ -8,6 +8,7 @@ struct Synapse
 	Synapse(double weight = 0.0) { this->weight = weight; }
 };
 
+class Neuron;
 typedef std::vector<Neuron> Layer;
 
 class Neuron {
