@@ -10,7 +10,7 @@ Neuron::Neuron(unsigned int index, unsigned int numSynapses)
 	sumOutput = 0.0;
 }
 
-void Neuron::feedForward(std::vector<Neuron>)
+void Neuron::feedForward(const Layer &)
 {
 	// todo
 }

@@ -1,7 +1,6 @@
 #pragma once
 #include "Neuron.h"
 
-
 class NNetwork {
 public:
 	NNetwork(const std::vector<unsigned int>&);
@@ -12,5 +11,5 @@ public:
 	void feedForward(const std::vector<double>&);
 
 private:
-	std::vector<std::vector<Neuron>> layers; // todo: typedef for std::vector<Neuron> as Layer or smth
+	std::vector<Layer> layers;
 };

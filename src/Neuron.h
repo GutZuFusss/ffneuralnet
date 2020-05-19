@@ -8,6 +8,8 @@ struct Synapse
 	Synapse(double weight = 0.0) { this->weight = weight; }
 };
 
+typedef std::vector<Neuron> Layer;
+
 class Neuron {
 public:
 	Neuron(unsigned int, unsigned int);
@@ -17,7 +19,7 @@ public:
 	void setOutput(double output) { this->output = output; }
 	double getOutput() { return output; };
 
-	void feedForward(std::vector<Neuron>);
+	void feedForward(const Layer &);
 
 private:
 	unsigned int index;
