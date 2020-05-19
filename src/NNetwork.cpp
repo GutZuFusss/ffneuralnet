@@ -2,7 +2,7 @@
 
 NNetwork::NNetwork(const std::vector<unsigned int> &networkStructure)
 {
-	// build our neural network
+	// build our neural network's layers
 	for(unsigned int l = 0; l < networkStructure.size(); l++)
 	{
 		layers.push_back(Layer());
@@ -21,5 +21,14 @@ std::vector<double> NNetwork::getOutput()
 
 void NNetwork::feedForward(const std::vector<double> &inputs)
 {
-	// todo
+	// first of all update the outputs
+	for(unsigned int i = 0; i < inputs.size(); i++)
+		layers[0][i].setOutput(inputs[i]);
+
+	// then feed everything through
+	for(unsigned int l = 1; l < layers.size(); l++) {
+		Layer& layer = layers[l];
+		for(unsigned int n = 0; n < layer.size(); n++)
+			layer[n].feedForward(layers[l - 1]);
+	}
 }
