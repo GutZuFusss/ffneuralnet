@@ -15,8 +15,7 @@ int main(int argc, char** argv)
 	for(int i = 0; i < inputs.size(); i++)
 		printf("%f, ", inputs[i]);
 	printf("\n\n\n");
-
 	net.feedForward(inputs);
-
+	net.printInfo();
 	system("pause");
 }
