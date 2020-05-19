@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29201.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ffneuralnet", "ffneuralnet.vcxproj", "{48650B25-D451-48D2-BB90-A0EB756D38F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48650B25-D451-48D2-BB90-A0EB756D38F5}.Debug|x64.ActiveCfg = Debug|x64
+		{48650B25-D451-48D2-BB90-A0EB756D38F5}.Debug|x64.Build.0 = Debug|x64
+		{48650B25-D451-48D2-BB90-A0EB756D38F5}.Debug|x86.ActiveCfg = Debug|Win32
+		{48650B25-D451-48D2-BB90-A0EB756D38F5}.Debug|x86.Build.0 = Debug|Win32
+		{48650B25-D451-48D2-BB90-A0EB756D38F5}.Release|x64.ActiveCfg = Release|x64
+		{48650B25-D451-48D2-BB90-A0EB756D38F5}.Release|x64.Build.0 = Release|x64
+		{48650B25-D451-48D2-BB90-A0EB756D38F5}.Release|x86.ActiveCfg = Release|Win32
+		{48650B25-D451-48D2-BB90-A0EB756D38F5}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2DBC52B5-97B2-4B23-8A68-F708F4E6B351}
+	EndGlobalSection
+EndGlobal
