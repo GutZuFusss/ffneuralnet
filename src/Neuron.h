@@ -29,4 +29,5 @@ private:
 	double sumOutput;
 
 	double randWeight() { return rand() / double(RAND_MAX); }
+	double activationFunction(double);
 };

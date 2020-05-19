@@ -14,3 +14,9 @@ void Neuron::feedForward(const Layer &)
 {
 	// todo
 }
+
+double Neuron::activationFunction(double t)
+{
+	// using a leaky relu function for now
+	return t > 0 ? t : t / 100;
+}
