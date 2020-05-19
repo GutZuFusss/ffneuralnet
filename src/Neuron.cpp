@@ -10,9 +10,15 @@ Neuron::Neuron(unsigned int index, unsigned int numSynapses)
 	sumOutput = 0.0;
 }
 
-void Neuron::feedForward(const Layer &)
+void Neuron::feedForward(const Layer &prevLayer)
 {
-	// todo
+	sumOutput = 0.0;
+
+	// add up our outputs
+	for(unsigned n = 0; n < prevLayer.size(); n++)
+		sumOutput += prevLayer[n].output * prevLayer[n].synapses[index].weight;
+
+	output = activationFunction(sumOutput); // apply out activation function to the sum of the outputs
 }
 
 double Neuron::activationFunction(double t)

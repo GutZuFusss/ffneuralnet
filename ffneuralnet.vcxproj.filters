@@ -21,9 +21,15 @@
     <ClCompile Include="src\Neuron.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="src\NNetwork.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Neuron.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NNetwork.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

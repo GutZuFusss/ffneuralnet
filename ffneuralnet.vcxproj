@@ -21,9 +21,11 @@
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Neuron.cpp" />
+    <ClCompile Include="src\NNetwork.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Neuron.h" />
+    <ClInclude Include="src\NNetwork.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
