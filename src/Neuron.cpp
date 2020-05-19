@@ -23,6 +23,6 @@ void Neuron::feedForward(const Layer &prevLayer)
 
 double Neuron::activationFunction(double t)
 {
-	// using a leaky relu function for now
+	// using a leaky relu function for now (sigmoid as suggested in the paper seems to heavy for my toaster)
 	return t > 0 ? t : t / 100;
 }

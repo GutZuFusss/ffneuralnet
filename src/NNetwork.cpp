@@ -18,6 +18,8 @@ std::vector<double> NNetwork::getOutput()
 {
 	std::vector<double> output;
 	Layer& layer = layers.back();
+
+	// loop over neurons and push their outputs to our output vector
 	for(unsigned int n = 0; n < layer.size(); n++)
 		output.push_back(layer[n].getOutput());
 
